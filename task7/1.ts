@@ -1,14 +1,4 @@
 /*
-Diketahui variable data siswa dengan contoh struktur:
-[ { nama: “Rojali”, skor: 70 }, …dst ]
-Buatlah sebuah fungsi yang menerima data nilai siswa dalam bentuk array of object. Kembalikanlah array of object yang hanya berisi data siswa yang lulus dimana minimal score yang lulus adalah 75.
-Contoh output :
-[ { nama: “Ucup”, skor: 90 }, …dst ]
- */
-
-
-
-/*
 Buat array dalam object baru dari data siswa yang diinput.
 Diketahui:
 1. Inputan akan berupa array in object dengan struktur [ { name: namaSiswa, score: nilaiRapor, class: namaKelas } ].
@@ -33,7 +23,7 @@ const CreateStudentCategory = (s: Student[]): Result => {
     }
 
     s.forEach((student)=>{
-        student.score > 75 ? res.lulus.push(student) : res.gagal.push(student)
+        student.score >= 75 ? res.lulus.push(student) : res.gagal.push(student)
     })
     
     return res
