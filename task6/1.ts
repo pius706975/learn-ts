@@ -48,7 +48,6 @@ const PassengerArray = (pass: [string, string, string][]): any => {
     return passengerData
 }
 
-
 /* from kak vika
 
 Buat object dalam array baru dari data mahasiswa yang diinput.
